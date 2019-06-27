@@ -8,50 +8,86 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <div class="container">
-	<form class="was-validated">
-		<div class="form-group">
-    		<div class="col">
-    			ФИО:
-      			<input type="text" class="form-control" placeholder="ФИО" pattern="[a-z]{1,15}" title="Только Кириллица" required>
-   	 		</div>
-   	 	<div class="col">
-      			Дата рождения:
-      			<input type="date" class="form-control" name="Дата рождения" required>
-      	</div>
-   	 	<div class="col">
-   	 			Выберите пол
+	<form class="col-md-12 col-sm-12 col-xs-12 form-horizontal">
+		<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				ФИО:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				<input type="text" class="form-control" placeholder="ФИО" title="Только Кириллица" required>
+			</div>
+		</div>
+   	 	<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Выберите пол:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
     			<select class="custom-select" required>
       				<option value="">Выберите пол</option>
       				<option value="1">Мужской</option>
       				<option value="2">Женский</option>
       			</select>
- 				<div class="invalid-feedback">Выберите пол</div>
-    	</div>
-  		<div class="col">
-  				Паспорт Серия:
-      			<input type="text" class="form-control" placeholder="Паспорт Серия" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Дата рождения:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				<input type="date" class="form-control" placeholder="Дата рождения" required>
+			</div>
+		</div>
+  		<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Паспорт Серия:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				<input type="text" class="form-control" placeholder="Паспорт Серия" required>
+			</div>
+		</div>
+		
+   	 	<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Паспорт номер:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				<input type="text" class="form-control" placeholder="Паспорт номер" required>
+			</div>
+		</div>
+   	 	<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Паспорт Дата выдачи:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				  <input type="date" class="form-control" placeholder="Паспорт Дата выдачи" required>
+			</div>
    	 	</div>
-   	 	<div class="col">
-   	 			Паспорт номер:
-      			<input type="number" class="form-control" placeholder="Паспорт номер" pattern="[a-z]{1,15}" title="Только цифры" max="4" required>
+   	 	<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Паспорт орган выдачи:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				  <input type="text" class="form-control" placeholder="Паспорт орган выдачи" required>
+			</div>
    	 	</div>
-   	 	<div class="col">
-      			Паспорт Дата выдачи:<input type="date" class="form-control" placeholder="Паспорт Дата выдачи" required>
+   	 	<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Регистрационный номер (ИНН):
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				  <input type="number" class="form-control" placeholder="Регистрационный номер (ИНН)" pattern="[a-z]{1,15}" title="Только цифры" required>
+			</div>
    	 	</div>
-   	 	<div class="col">
-   	 			Паспорт орган выдачи:
-      			<input type="text" class="form-control" placeholder="Паспорт орган выдачи" required>
-   	 	</div>
-   	 	<div class="col">
-   	 			Регистрационный номер (ИНН):
-      			<input type="number" class="form-control" placeholder="Регистрационный номер (ИНН)" pattern="[a-z]{1,15}" title="Только цифры" required>
-   	 	</div>
-   	 	<div class="col">
-   	 			Адрес по месту регистрации:
-      			<input type="text" class="form-control" placeholder="Адрес по месту регистрации" required>
-   	 		</div>
+   	 	<div class="form-group row">
+			<label class="col-form-label text-right col-md-3 col-sm-6 col-xs-12 text-left-xs">
+				Адрес по месту регистрации:
+			</label>
+			<div class="col-md-9 col-sm-6 col-xs-12">
+				  <input type="text" class="form-control" placeholder="Адрес по месту регистрации" required>
+			</div>
    	 	</div>
 	</form>
 </div>
+
 
 
